@@ -1,0 +1,31 @@
+.container {
+      display: flex;
+      align-content: center;
+      border-color: blue;
+        
+}
+
+#header {
+      display: flex;
+      border: blue;
+      border-width: 2px;
+      flex-direction: column;           
+}
+
+
+
+#header-title {
+      display: flex;
+      font-weight: 5rem;
+      border-color: blue;
+      border-width: 2px;
+justify-content: center;
+}
+
+#header-description {
+      display: flex;
+      font-weight: 2rem;
+      border: blue;
+      border-width: 2px;
+justify-content: center;
+}
