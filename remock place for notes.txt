@@ -1,0 +1,58 @@
+what do we need:
+
+All Pages:
+      contact nav bar at bottom with log in and message inputs
+
+      NAV BAR on bottom needs 
+      input fields ffor contact info: name email message, all disabled until clicked on, send message button needs
+      Links highlight on hover
+      first continue reading button goes to continue reading page
+
+      
+
+- clicking on any banner goes back to Home page
+Home Page:
+    should contain IMAGE GALLERY at the top
+    2 click on to continue buttons 
+    everything centered
+    one section has 2 columns 
+    Banner static - 
+    3 pic image gallery at least
+    tell me more button
+
+
+
+Continue Reading page:
+single blog post
+
+classes: images, columns
+
+//_____________________________________________________________________//
+all pages laid out with Grid styled with Flex
+
+Container 
+Main Page
+    Header
+    Body
+        image gallery
+        quote space
+        column 1        column 2
+    Body
+    Footer
+
+To be continued Page
+
+Continue Reading
+    Header
+
+
+
+
+    Footer
+
+
+
+
+   
+
+
