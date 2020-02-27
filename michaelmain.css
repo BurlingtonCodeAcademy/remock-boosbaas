@@ -1,14 +1,14 @@
 .container {
       display: flex;
       align-content: center;
-      border-color: blue;
+      border:3px solid #0A72B3;
         
 }
 
 #header {
       display: flex;
-      border-color: blue;
-      border-width: 2px;
+      border:3px solid #0A72B3;
+      background-color: #1CA7FF;
       flex-direction: column;           
 }
 
@@ -17,15 +17,15 @@
 #header-title {
       display: flex;
       font-weight: 5rem;
-      border-color: blue;
-      border-width: 2px;
+      border:3px solid #0A72B3;
+      background-color: #1CA7FF
 justify-content: center;
 }
 
 #header-description {
       display: flex;
       font-weight: 2rem;
-      border: blue;
-      border-width: 2px;
+      border:3px solid #0A72B3;
+      background-color: #1CA7FF
 justify-content: center;
 }
