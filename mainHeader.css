@@ -1,4 +1,4 @@
-.container {
+.headerContainer {
       display: flex;
       justify-content: center;
       border-style: none none double none;
@@ -22,3 +22,4 @@
       font-size: 1.25em;
       justify-content: center;
 }
+
