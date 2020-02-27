@@ -5,21 +5,38 @@
 
 #pictures-title {
       display: flex;
-      border: solid blue 1px;
+      font-size: 1.5em;
       justify-content: center;
-
 }
 
 .gallery {
       display: flex;
-      border: solid blue 2px;
       flex-direction: row;
       justify-content: center;
-      }
+}
 
-#picturesLabels {
+.picturesLabels {
       display: flex;
-      border: solid blue 2px;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1em;
+}
+
+.picture {
+      display: flex;
+      padding: 0 .5em 0 .5em;
+}
+
+#pic-link-button {
+      display: flex;
+      border-style: inset;
+      border-color: blue;
+      border-width: .1em;
+      padding: .5em 0 .5em 0;
+}
+
+.pic-link {
+      display: flex;
       flex-direction: row;
       justify-content: center;
 }
