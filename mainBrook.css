@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  height: 100%;
+  background-color: #FFF1DE;
+}
+.main{
+  display:flex;
+  justify-content: space-between;
+}
+
+p{
+  display:flex;
+  width:50%;
+  font-family: 'Libre Baskerville',16px;
+}
+
+.toTheSide {
+ display: flex;
+ max-width: 20%;
+flex-direction: column;
+}
+
+#gradBox1{
+    background-color: #1CA7FF;
+}
+

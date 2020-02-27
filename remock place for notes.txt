@@ -1,3 +1,22 @@
+Styles:
+
+Fonts html: <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|Raleway|Roboto&display=swap" rel="stylesheet"> 
+    css 
+    font-family: 'Libre Baskerville',16px; //use for body text
+    font-family: 'Raleway', ;
+    font-family: 'Roboto', ;
+    font-family: 'Open Sans', 
+
+Colors:
+header and button background #1CA7FF //sky blue
+inner borders  #0A72B3 //darker cerulean
+outer borders 1px #B36800 //paper bag
+
+other colors in this family: #36B2FF, palest of the blues, #FFF1DE a very pale blush might be suitable for page backgrounds
+
+
+
+
 what do we need:
 
 All Pages:
