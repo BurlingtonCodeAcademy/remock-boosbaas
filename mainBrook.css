@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 150px 150px;
+  grid-gap: 1rem;
+  font-family: 'Oxanium', sans-serif; 
+
+}
+
+.sidebar {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+}
+div.sidebar img{
+    max-width: 20%;
+    height: auto;
+}
+#gradBox1{
+    background-color: mediumturquoise;
+}
+
