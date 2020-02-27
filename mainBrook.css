@@ -1,21 +1,26 @@
 .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 150px 150px;
-  grid-gap: 1rem;
-  font-family: 'Oxanium', sans-serif; 
-
+  display: flex;
+  height: 100%;
+  background-color: #FFF1DE;
+}
+.main{
+  display:flex;
+  justify-content: space-between;
 }
 
-.sidebar {
-  grid-row: 2 / 4;
-  grid-column: 1 / 2;
+p{
+  display:flex;
+  width:50%;
+  font-family: 'Libre Baskerville',16px;
 }
-div.sidebar img{
-    max-width: 20%;
-    height: auto;
+
+.toTheSide {
+ display: flex;
+ max-width: 20%;
+flex-direction: column;
 }
+
 #gradBox1{
-    background-color: mediumturquoise;
+    background-color: #1CA7FF;
 }
 
