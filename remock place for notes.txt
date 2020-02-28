@@ -9,13 +9,14 @@ Fonts html: <link href="https://fonts.googleapis.com/css?family=Libre+Baskervill
 
 Colors:
 header and button background #1CA7FF //sky blue
-inner borders  #0A72B3 //darker cerulean
-outer borders 1px #B36800 //paper bag
+borders 3px solid #0A72B3 //darker cerulean
+outer borders 2px #B36800 //paper bag if applicable
 
 other colors in this family: #36B2FF, palest of the blues, #FFF1DE a very pale blush might be suitable for page backgrounds
 
-
-
+Page addresses: 
+Continue reading: <a href="continue-reading.html">
+Learn More: <a href="learn-more.html">
 
 what do we need:
 
