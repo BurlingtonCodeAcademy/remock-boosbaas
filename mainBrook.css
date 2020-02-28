@@ -1,6 +1,6 @@
 p{
 display:flex;
-    justify-content: space-around;
+  justify-content: space-around;
  width:75%;
   font-family:'Libre Baskerville',16px;
   text-align: center;
@@ -10,8 +10,8 @@ h2{
   display: inline;
   font:"Raleway",32px;
   text-align: center;
- 
 }
+
 h3{
   display:flex;
   font:"Raleway",20px;
@@ -26,22 +26,19 @@ h3{
   width: auto;
   background-color: rgb(245, 236, 223);
 }
+
 .gallery{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
   width:60%;
   border: 3px black;
-  
 }
 
-
-#topImage{
+.logo{
 display:flex;
-max-width: fit-content;
-height:15%;
-align-items:center;
-color: rgb(2, 9, 14);
-  background: linear-gradient(to top,rgb(207, 213, 216), #080511d0);
+width:60%  ;
+background-image: url(remockBox.svg);
+
 }
 
