@@ -4,7 +4,8 @@
       display: flex;
      flex-direction: column;
      margin-left: 20%;
-     margin-right: 20%; 
+     margin-right: 20%;
+
 }
 
 #header {
@@ -13,7 +14,6 @@
       border-style: none none double none;
       border-color: blue;
       border-width: .5em;
-
       }
 
 #header-title {
@@ -33,21 +33,22 @@
 .pictureContainer {
       display: flex;
       flex-direction: column;
-      margin-left: 20%;
-      margin-right: 20%;
+      margin-top: 1em;
+ 
 }
 
 #pictures-title {
       display: flex;
       font-size: 1.5em;
       justify-content: center;
+      align-content: center;
       
 }
 
 .mainPageGallery {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
 }
 
 .picturesLabels {
