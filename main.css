@@ -86,7 +86,8 @@
 
 #quote {
       display: flex;
-
+margin-top: 1em;
+margin-bottom: 1em;
       font-size: 2em;
       border-right: 5px double blue;
       border-radius: 15px 15px 15px 15px;
