@@ -84,8 +84,7 @@
       justify-content: center;
       align-content: center;
       margin-bottom: 1em;
-      
-      
+      margin-top: 2.5em;     
 }
 
 /*#pic-link-button {
@@ -154,12 +153,7 @@
       width: auto;
 }
 
-#aeroPostTeaser {
-      display: flex;
-      flex-direction: column;
-}
-
-#dragonPostTeaser {
+.teaserBox {
       display: flex;
       flex-direction: column;
 }
