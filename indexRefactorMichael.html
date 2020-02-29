@@ -143,14 +143,16 @@
                               <SPAN ID="footerTitleBold">GET IN TOUCH:</SPAN>
                         </div>
                         <div class="formSection">
-                              
-                              <form  action="action_page.php">
-                                    <label class="fname" for="fname">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                                    <label class="lname" for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
+                              <form action="action_page.php">
+                                    <div> <label class="name" for="fname">First Name</label>
+                                          <input type="text" id="fname" name="firstname" placeholder="Your name.."
+                                                required>
+                                    </div>
+                                    <div><label class="name" for="email">Your Email</label>
+                                          <input type="text" id="email" name="lastname" placeholder="Your email"
+                                                required>
+                                    </div>
                                     <label class="subject" for="subject">Subject</label>
                                     <textarea id="subject" name="subject" placeholder="Write something.."
                                           style="height:200px"></textarea>
