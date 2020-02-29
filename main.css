@@ -55,7 +55,7 @@
 #pic-link-button {
       display: flex;
       border-style: inset;
-      border:3px solid rgba(48, 53, 56, 0.89)
+      border:3px solid rgba(48, 53, 56, 0.89);
       padding: .5em 0 .5em 0;
 }
 
