@@ -1,4 +1,4 @@
-.continueReadingPageContainer {
+.blogPostPageContainer {
       display: grid;
       grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
       grid-gap: 1rem;
@@ -37,8 +37,8 @@
 
 .column1Container {
       display: grid;
-      grid-column-start: 2;
-      grid-column-end: 4;
+      grid-column-start: 3;
+      grid-column-end: 5;
       order: 4;
 }
 
@@ -67,10 +67,10 @@ h2 {
 
 .column2Container {
       display: grid;
-      grid-column-start: 4;
-      grid-column-end: 5;
-      order: 5;
-      border-style: none none none double;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      order: 2;
+      border-style: none double none none;
       border-color: red;
       border-width: 4px;
 }
