@@ -4,7 +4,7 @@ flex-wrap: wrap;
 justify-content: space-around;
  width:75%;
   font-family:'Libre Baskerville',16px;
-  text-align: center;
+  
 }
 
 h2{
@@ -22,7 +22,11 @@ h3{
   border:3px solid rgb(19, 31, 31);
   background-color: rgb(125, 125, 125);
 }
+<<<<<<< HEAD:mainBrook.css
 .contReadingContainer {
+=======
+.columnsContainer {
+>>>>>>> master:DONEmainBrook.css
   display: flex;
   height: 100%;
   width: auto;

@@ -1,29 +1,24 @@
-<<<<<<< HEAD
-.page-header {
-      display: flex;
-      justify-content: center;
-      border-style: none none double none;
-      border:3px solid rgba(48, 53, 56, 0.89)
-=======
+.pageContainer {
+      display: grid;
+      grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+      grid-gap: 1rem;
+}
+
 /********Header**********/
 
-.pageHeader {
-      display: flex;
-      flex-direction: column;
-      margin-left: 20%;
-      margin-right: 20%;
->>>>>>> master
+.headerContainer {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      order: 1;
 }
 
 #header {
       display: flex;
       flex-direction: column;
-<<<<<<< HEAD
-=======
       border-style: none none double none;
       border-color: blue;
       border-width: .5em;
->>>>>>> master
 }
 
 #header-title {
@@ -37,40 +32,34 @@
       font-size: 1.25em;
       justify-content: center;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> master
-/********Pictures**********/
+/***********Picture gallery *******/
 
 .pictureContainer {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      order: 2;
+}
+
+.pictureGallery {
       display: flex;
       flex-direction: column;
-<<<<<<< HEAD
-=======
       margin-top: 1em;
->>>>>>> master
 }
 
 #pictures-title {
       display: flex;
       font-size: 1.5em;
       justify-content: center;
-<<<<<<< HEAD
-=======
       align-content: center;
->>>>>>> master
 }
 
 .mainPageGallery {
       display: flex;
       flex-direction: row;
-<<<<<<< HEAD
-      justify-content: center;
-=======
       justify-content: space-between;
       align-content: center;
->>>>>>> master
 }
 
 .picturesLabels {
@@ -82,17 +71,6 @@
 
 .picture {
       display: flex;
-<<<<<<< HEAD
-      padding: 0 .5em 0 .5em;
-}
-
-#pic-link-button {
-      display: flex;
-      border-style: inset;
-      border:3px solid rgba(48, 53, 56, 0.89);
-      padding: .5em 0 .5em 0;
-=======
->>>>>>> master
 }
 
 .pic-link {
@@ -101,9 +79,6 @@
       justify-content: center;
 }
 
-<<<<<<< HEAD
-/****Quote Space****/
-=======
 #pic-link-button {
       display: flex;
       border-style: inset;
@@ -112,72 +87,25 @@
       padding: .5em 0 .5em 0;
 }
 
-/****Quote Space****/
+/***********Picture galleryquote section *******/
 
->>>>>>> master
+.quoteContainer {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      order: 3;
+}
+
 .quoteSpace {
       display: flex;
       background-image: linear-gradient(to bottom right, rgb(54, 227, 240), rgb(76, 201, 117));
       justify-content: center;
-<<<<<<< HEAD
-      padding-top: 20px;
-=======
       align-content: center;
       margin-top: 20px;
->>>>>>> master
 }
 
 #quote {
       display: flex;
-<<<<<<< HEAD
-      padding-top: 1rem;
-      padding-bottom: 2rem;
-      font-size: 2em;
-      border-right :3px solid rgba(48, 53, 56, 0.89);
-      border-radius: 15px 15px 15px 15px;
-      border-left:3px solid rgba(48, 53, 56, 0.89);
-}
-
-/*********columns on main page taken from cont. reading css****/
-p{
-display:flex;
-justify-content: space-around;
-width:75%;
-font-family:'Libre Baskerville',16px;
-text-align: justify;
-}
-
-h2{
- display: flex;
-  font:"Raleway",32px;
-  text-align: flex-end;
-}
-
-h3{
-  display:flex;
-  font:"Raleway",20px;
-  margin:15% auto;
-  padding: 15% auto;
-  border:3px solid rgba(48, 53, 56, 0.89);
-  background-color: rgb(70, 100, 119);
-}
-.columnsContainer {
-  display: flex;
-  height: 100%;
-  width: auto;
-  background-color: rgb(245, 236, 223);
-}
-.infoOnSideGallery{
-  display:flex;
-  flex-direction: column;
-  width: min-content;
-  justify-content: flex-start;
- 
-  border:3px solid rgba(48, 53, 56, 0.89);
-  background-color: rgb(70, 100, 119);
-}
-
-=======
       margin-top: 1em;
       margin-bottom: 1em;
       font-size: 2em;
@@ -186,20 +114,61 @@ h3{
       border-left: 5px double blue;
 }
 
-/*********columns on main page taken from cont. reading css****/
+/***********column 1 section *******/
+
+.column1Container {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      order: 4;
+}
+
+#aeroPostTeaser {
+      display: flex;
+}
+
+#dragonPostTeaser {
+      display: flex;
+}
 
 p {
       display: flex;
       justify-content: space-around;
-      width: 75%;
       font-family: 'Libre Baskerville', 16px;
       text-align: center;
 }
 
 h2 {
-      display: inline;
+      display: flex;
       font: "Raleway", 32px;
       text-align: center;
+}
+
+/***********column 2 section *******/
+
+.column2Container {
+      display: grid;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      order: 5;
+      border-style: none none none double;
+      border-color: red;
+      border-width: 4px;
+}
+
+/***Column 2 - links to posts ***/
+
+.postLinks {
+      display: flex;
+      flex-direction: column;
+      border-style: none none double none;
+      border-color: red;
+      border-width: 4px;
+}
+
+.postLink {
+      display: flex;
+      border-bottom: solid 4px firebrick;
 }
 
 h3 {
@@ -211,34 +180,26 @@ h3 {
       background-color: #1CA7FF;
 }
 
-.columnsContainer {
-      display: flex;
-      height: 100%;
-      width: auto;
-      background-color: rgb(245, 236, 223);
-      margin-top: 20px;
-      margin-left: 20%;
-      margin-right: 20%;
-      margin-bottom: 20px;
-}
+/***Column 2 -  links to articles  ***/
 
-.gallery {
+.articlesLinkContainer {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      width: 60%;
-      border: 3px black;
+      border-style: none none double none;
+      border-color: green;
+      border-width: 4px;
 }
 
-.logo {
-      display: flex;
-      width: 60%;
-      background-image: url(remockBox.svg);
-}
-
-/*********footer****/
+/********** Footer  *************/
 
 .footerContainer {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      order: 6;
+}
+
+.footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -331,4 +292,3 @@ h3 {
       grid-area: footerFacebook;
       background-color: rgb(252, 30, 30);
 }
->>>>>>> master
