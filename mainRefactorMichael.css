@@ -1,0 +1,182 @@
+.pageContainer {
+      display: grid;
+      grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+      grid-gap: 1rem;
+    }
+
+
+    /********Header**********/
+
+.headerContainer {
+      display:    grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      order: 1;
+}
+#header {
+      display: flex;
+      flex-direction: column;
+      border-style: none none double none;
+      border-color: blue;
+      border-width: .5em;
+}
+#header-title {
+      display: flex;
+      font-size: 4em;
+      justify-content: center;
+}
+#header-description {
+      display: flex;
+      font-size: 1.25em;
+      justify-content: center;
+}
+
+/***********Picture gallery *******/
+.pictureContainer {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      order: 2;
+}
+.pictureGallery {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+}
+#pictures-title {
+      display: flex;
+      font-size: 1.5em;
+      justify-content: center;
+      align-content: center;
+}
+.mainPageGallery {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+}
+.picturesLabels {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1em;
+}
+.picture {
+      display: flex;
+}
+.pic-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+#pic-link-button {
+      display: flex;
+      border-style: inset;
+      border-color: blue;
+      border-width: .1em;
+      padding: .5em 0 .5em 0;
+}
+
+/***********Picture galleryquote section *******/
+
+.quoteContainer {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      order: 3;
+}
+.quoteSpace {
+      display: flex;
+      background-image: linear-gradient(to bottom right, rgb(54, 227, 240), rgb(76, 201, 117));
+      justify-content: center;
+      align-content: center;
+      margin-top: 20px;
+}
+#quote {
+      display: flex;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 2em;
+      border-right: 5px double blue;
+      border-radius: 15px 15px 15px 15px;
+      border-left: 5px double blue;
+}
+
+/***********column 1 section *******/
+
+.column1Container {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      order: 4;
+}
+
+#aeroPostTeaser {
+      display: flex;
+}
+
+#dragonPostTeaser {
+      display: -webkit-inline-flex;
+}
+
+p {
+      display: flex;
+      justify-content: space-around;
+      width: 75%;
+      font-family: 'Libre Baskerville', 16px;
+      text-align: center;
+}
+
+h2 {
+      display: inline;
+      font: "Raleway", 32px;
+      text-align: center;
+}
+
+/***********column 2 section *******/
+.column2Container {
+      display: grid;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      order: 5;
+}
+      /********** links to posts ******/
+.postLinkContainer {
+      display: flex;
+      flex-direction: column;
+      border-style: none none double none;
+      border-color: red;
+      border-width: 1px;
+}
+      /********** links to articles  ******/
+
+      .postLinkContainer {
+            display: flex;
+            flex-direction: column;
+            border-style: none none double none;
+            border-color: red;
+            border-width: 1px;
+
+
+
+
+
+.postLink {
+      display: flex;
+      border-bottom: solid 1px firebrick;
+}
+
+h3 {
+      display: flex;
+      font: "Raleway", 20px;
+      margin: 15% auto;
+      padding: 15% auto;
+      border: 3px solid #0A72B3;
+      background-color: #1CA7FF;
+}
+
+
+
+
+
+
