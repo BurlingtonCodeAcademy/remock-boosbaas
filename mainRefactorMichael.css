@@ -243,15 +243,19 @@ h3 {
 .footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(1fr);
       grid-gap: 1rem;
       grid-template-areas: 
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "formSection      formSection          footerText       footerText" 
-      "formSection      formSection        footerText       footerText" 
-      "formSection      formSection        footerAddress    footerTwitter" 
-      "formSection      formSection        footerAddress    footerInstagram" "formSection      formSection        footerPhone      footerWebsite" "formSection  formSection    footerEmail      footerFacebook";
+      "footerTitle       footerTitle        footerTitle      footerTitle"
+      "footerTitle       footerTitle        footerTitle      footerTitle"
+      "footerTitle       footerTitle        footerTitle      footerTitle" 
+      "footerTitle       footerTitle        footerTitle      footerTitle" 
+      "formSection       formSection        footerText       footerText" 
+      "formSection       formSection        footerText       footerText" 
+      "formSection       formSection        footerAddress    footerTwitter" 
+      "formSection       formSection        footerAddress    footerInstagram" 
+      "formSection       formSection        footerPhone      footerWebsite" 
+      "formSection       formSection        footerEmail      footerFacebook";
 }
 
 .footerTitle {
