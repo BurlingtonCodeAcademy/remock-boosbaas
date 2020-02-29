@@ -84,7 +84,7 @@
       justify-content: center;
       align-content: center;
       margin-bottom: 1em;
-      margin-top: 2.5em;     
+      margin-top: 2.5em;
 }
 
 /*#pic-link-button {
@@ -219,13 +219,8 @@ h3 {
 .articlesLinkContainer {
       display: flex;
       flex-direction: column;
-      border-style: none none double none;
-      border-color: green;
-      border-width: 4px;
       margin-left: 1em;
 }
-
-
 
 .articleBox {
       flex-direction: column;
@@ -242,21 +237,29 @@ h3 {
       grid-column-start: 1;
       grid-column-end: 6;
       order: 7;
+      background-color: #f2f2f2;
 }
 
 .footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-gap: 1rem;
-      grid-template-areas: "footerTitle       footerTitle         footerTitle      footerTitle" "footerTitle       footerTitle         footerTitle      footerTitle" "footerTitle       footerTitle         footerTitle      footerTitle" "formSection      formSection          footerText       footerText" "formSection      formSection        footerText       footerText" "formSection      formSection        footerAddress    footerTwitter" "formSection      formSection        footerAddress    footerInstagram" "formSection      formSection        footerPhone      footerWebsite" "formSection  formSection    footerEmail      footerFacebook";
+      grid-template-areas: 
+      "footerTitle       footerTitle         footerTitle      footerTitle" 
+      "footerTitle       footerTitle         footerTitle      footerTitle" 
+      "formSection      formSection          footerText       footerText" 
+      "formSection      formSection        footerText       footerText" 
+      "formSection      formSection        footerAddress    footerTwitter" 
+      "formSection      formSection        footerAddress    footerInstagram" "formSection      formSection        footerPhone      footerWebsite" "formSection  formSection    footerEmail      footerFacebook";
 }
 
 .footerTitle {
       grid-area: footerTitle;
-      background-color: lightslategrey;
-      align-items: center;
+      display: flex;
+      background-color: #f2f2f2;
       justify-content: center;
+      align-content: center;
 }
 
 #footerTitleBold {
@@ -265,43 +268,43 @@ h3 {
 
 .footerText {
       grid-area: footerText;
-      background-color: rgb(252, 30, 30);
+      background-color: #f2f2f2;
 }
 
 .footerAddress {
       grid-area: footerAddress;
-      background-color: rgb(45, 30, 252);
+      background-color: #f2f2f2;
       justify-content: center;
 }
 
 .footerPhone {
       grid-area: footerPhone;
-      background-color: rgb(30, 252, 60);
+      background-color: rgb#f2f2f2;
 }
 
 .footerEmail {
       grid-area: footerEmail;
-      background-color: rgb(215, 30, 252);
+      background-color: #f2f2f2;
 }
 
 .footerTwitter {
       grid-area: footerTwitter;
-      background-color: rgb(74, 252, 30);
+      background-color: #f2f2f2;
 }
 
 .footerInstagram {
       grid-area: footerInstagram;
-      background-color: rgb(30, 252, 233);
+      background-color: #f2f2f2;
 }
 
 .footerWebsite {
       grid-area: footerWebsite;
-      background-color: rgb(63, 30, 252);
+      background-color: #f2f2f2;
 }
 
 .footerFacebook {
       grid-area: footerFacebook;
-      background-color: rgb(252, 30, 30);
+      background-color: #f2f2f2;
 }
 
 /****form styling*****/
@@ -349,4 +352,3 @@ input[type=submit]:hover {
       background-color: #f2f2f2;
       padding: 20px;
 }
-
