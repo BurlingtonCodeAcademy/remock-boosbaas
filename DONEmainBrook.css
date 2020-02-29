@@ -1,6 +1,7 @@
 p{
 display:flex;
-  justify-content: space-around;
+flex-wrap: wrap;
+justify-content: space-around;
  width:75%;
   font-family:'Libre Baskerville',16px;
   
@@ -13,32 +14,42 @@ h2{
 }
 
 h3{
-  display:flex;
+  
   font:"Raleway",20px;
+  text-align: center;
   margin:15% auto;
   padding: 15% auto;
-  border:3px solid #0A72B3;
-  background-color: #1CA7FF;
+  border:3px solid rgb(19, 31, 31);
+  background-color: rgb(125, 125, 125);
 }
+<<<<<<< HEAD:mainBrook.css
+.contReadingContainer {
+=======
 .columnsContainer {
+>>>>>>> master:DONEmainBrook.css
   display: flex;
   height: 100%;
   width: auto;
   background-color: rgb(245, 236, 223);
 }
 
-.gallery{
+ .infoOnSideGallery{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
   width:60%;
   border: 3px black;
-}
+} 
 
 .logo{
 display:flex;
 width:60%  ;
 background-image: url(remockBox.svg);
+}
+
+.learnMoreContainer{
+  display:flex;
+ width: 100%;
 
 }
 
