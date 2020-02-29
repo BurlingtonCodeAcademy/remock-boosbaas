@@ -1,0 +1,213 @@
+.continueReadingPageContainer {
+      display: grid;
+      grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+      grid-gap: 1rem;
+}
+
+/********Header**********/
+
+.headerContainer {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      order: 1;
+}
+
+#header {
+      display: flex;
+      flex-direction: column;
+      border-style: none none double none;
+      border-color: blue;
+      border-width: .5em;
+}
+
+#header-title {
+      display: flex;
+      font-size: 4em;
+      justify-content: center;
+}
+
+#header-description {
+      display: flex;
+      font-size: 1.25em;
+      justify-content: center;
+}
+
+/***********column 1 section *******/
+
+.column1Container {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      order: 4;
+}
+
+#aeroPostTeaser {
+      display: flex;
+}
+
+#dragonPostTeaser {
+      display: flex;
+}
+
+p {
+      display: flex;
+      justify-content: space-around;
+      font-family: 'Libre Baskerville', 16px;
+      text-align: center;
+}
+
+h2 {
+      display: flex;
+      font: "Raleway", 32px;
+      text-align: center;
+}
+
+/***********column 2 section *******/
+
+.column2Container {
+      display: grid;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      order: 5;
+      border-style: none none none double;
+      border-color: red;
+      border-width: 4px;
+}
+
+/***Column 2 - links to posts ***/
+
+.postLinks {
+      display: flex;
+      flex-direction: column;
+      border-style: none none double none;
+      border-color: red;
+      border-width: 4px;
+}
+
+.postLink {
+      display: flex;
+      border-bottom: solid 4px firebrick;
+}
+
+h3 {
+      display: flex;
+      font: "Raleway", 20px;
+      margin: 15% auto;
+      padding: 15% auto;
+      border: 3px solid #0A72B3;
+      background-color: #1CA7FF;
+}
+
+/***Column 2 -  links to articles  ***/
+
+.articlesLinkContainer {
+      display: flex;
+      flex-direction: column;
+      border-style: none none double none;
+      border-color: green;
+      border-width: 4px;
+}
+
+/********** Footer  *************/
+
+.footerContainer {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      order: 6;
+}
+
+.footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      grid-template-areas: 
+      "footerTitle       footerTitle         footerTitle      footerTitle"
+      "footerTitle       footerTitle         footerTitle      footerTitle" 
+      "footerTitle       footerTitle         footerTitle      footerTitle" 
+      "nameInput         emailInput          footerText       footerText" 
+      "messageInput      messageInput        footerText       footerText" 
+      "messageInput      messageInput        footerAddress    footerTwitter" 
+      "messageInput      messageInput        footerAddress    footerInstagram" 
+      "messageInput      messageInput        footerPhone      footerWebsite" 
+      "footerSendButton  footerSendButton    footerEmail      footerFacebook";
+}
+
+.footerTitle {
+      display: flex;
+      grid-area: footerTitle;
+      background-color: lightslategrey;
+      align-items: center;
+      justify-content: center;
+}
+
+#footerTitleBold {
+      font-weight: bold;
+}
+
+.nameInput {
+      grid-area: nameInput;
+      background-color: rgb(30, 45, 252);
+}
+
+.emailInput {
+      grid-area: emailInput;
+      background-color: rgb(252, 82, 30);
+}
+
+.messageInput {
+      grid-area: messageInput;
+      background-color: rgb(189, 30, 252);
+}
+
+.footerMediaLink {
+      justify-content: center;
+}
+
+.footerSendButton {
+      grid-area: footerSendButton;
+      background-color: rgb(248, 252, 30);
+}
+
+.footerText {
+      grid-area: footerText;
+      background-color: rgb(252, 30, 30);
+}
+
+.footerAddress {
+      grid-area: footerAddress;
+      background-color: rgb(45, 30, 252);
+      justify-content: center;
+}
+
+.footerPhone {
+      grid-area: footerPhone;
+      background-color: rgb(30, 252, 60);
+}
+
+.footerEmail {
+      grid-area: footerEmail;
+      background-color: rgb(215, 30, 252);
+}
+
+.footerTwitter {
+      grid-area: footerTwitter;
+      background-color: rgb(74, 252, 30);
+}
+
+.footerInstagram {
+      grid-area: footerInstagram;
+      background-color: rgb(30, 252, 233);
+}
+
+.footerWebsite {
+      grid-area: footerWebsite;
+      background-color: rgb(63, 30, 252);
+}
+
+.footerFacebook {
+      grid-area: footerFacebook;
+      background-color: rgb(252, 30, 30);
+}
