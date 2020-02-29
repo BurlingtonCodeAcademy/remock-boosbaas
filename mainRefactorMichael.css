@@ -42,6 +42,12 @@
       order: 2;
 }
 
+.teaserBox {
+      border-style: none none double none;
+      border-color: blue;
+      border-width: .5em;
+}
+
 .pictureGallery {
       display: flex;
       flex-direction: column;
@@ -58,7 +64,7 @@
 .mainPageGallery {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-content: center;
 }
 
@@ -73,10 +79,11 @@
       display: flex;
 }
 
-.pic-link {
+.linkButton {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin-bottom: 1em;
 }
 
 #pic-link-button {
@@ -84,7 +91,10 @@
       border-style: inset;
       border-color: blue;
       border-width: .1em;
-      padding: .5em 0 .5em 0;
+      margin-top: 2.5em;
+      justify-content: center;
+      width: 20%;
+      height: 20%;
 }
 
 /***********Picture galleryquote section *******/
@@ -108,6 +118,8 @@
       display: flex;
       margin-top: 1em;
       margin-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
       font-size: 2em;
       border-right: 5px double blue;
       border-radius: 15px 15px 15px 15px;
@@ -125,17 +137,19 @@
 
 #aeroPostTeaser {
       display: flex;
+      flex-direction: column;
 }
 
 #dragonPostTeaser {
       display: flex;
+      flex-direction: column;
 }
 
 p {
       display: flex;
       justify-content: space-around;
       font-family: 'Libre Baskerville', 16px;
-      text-align: center;
+      text-align: left;
 }
 
 h2 {
@@ -164,21 +178,28 @@ h2 {
       border-style: none none double none;
       border-color: red;
       border-width: 4px;
+      margin-left: 2em;
 }
 
 .postLink {
+      flex-direction: column;
       display: flex;
       border-bottom: solid 4px firebrick;
+      align-content: space-around;
+      margin-top: 1em
+}
+
+.date {
+      border: 3px solid #0A72B3;
+      background-color: #1CA7FF;
+      margin-top: 1em;
 }
 
 h3 {
       display: flex;
       font: "Raleway", 20px;
-      margin: 15% auto;
-      padding: 15% auto;
-      border: 3px solid #0A72B3;
-      background-color: #1CA7FF;
-}
+     
+      }
 
 /***Column 2 -  links to articles  ***/
 
@@ -204,20 +225,10 @@ h3 {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-gap: 1rem;
-      grid-template-areas: 
-      "footerTitle       footerTitle         footerTitle      footerTitle"
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "formSection      formSection          footerText       footerText" 
-      "formSection      formSection        footerText       footerText" 
-      "formSection      formSection        footerAddress    footerTwitter" 
-      "formSection      formSection        footerAddress    footerInstagram" 
-      "formSection      formSection        footerPhone      footerWebsite" 
-      "formSection  formSection    footerEmail      footerFacebook";
+      grid-template-areas: "footerTitle       footerTitle         footerTitle      footerTitle" "footerTitle       footerTitle         footerTitle      footerTitle" "footerTitle       footerTitle         footerTitle      footerTitle" "formSection      formSection          footerText       footerText" "formSection      formSection        footerText       footerText" "formSection      formSection        footerAddress    footerTwitter" "formSection      formSection        footerAddress    footerInstagram" "formSection      formSection        footerPhone      footerWebsite" "formSection  formSection    footerEmail      footerFacebook";
 }
 
 .footerTitle {
-     
       grid-area: footerTitle;
       background-color: lightslategrey;
       align-items: center;
@@ -227,7 +238,6 @@ h3 {
 #footerTitleBold {
       font-weight: bold;
 }
-
 
 .footerText {
       grid-area: footerText;
@@ -273,37 +283,45 @@ h3 {
 /****form styling*****/
 
 input[type=text], select, textarea {
-  
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      width: 100%;
+      /* Full width */
+      padding: 12px;
+      /* Some padding */
+      border: 1px solid #ccc;
+      /* Gray border */
+      border-radius: 4px;
+      /* Rounded borders */
+      box-sizing: border-box;
+      /* Make sure that padding and width stays in place */
+      margin-top: 6px;
+      /* Add a top margin */
+      margin-bottom: 16px;
+      /* Bottom margin */
+      resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
+
 input[type=submit] {
-  
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
-  background-color: #45a049;
+      background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
+
 .formSection {
-  grid-area: formSection;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-} 
+      grid-area: formSection;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+}
