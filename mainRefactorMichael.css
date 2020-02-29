@@ -208,16 +208,16 @@ h3 {
       "footerTitle       footerTitle         footerTitle      footerTitle"
       "footerTitle       footerTitle         footerTitle      footerTitle" 
       "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "footerForm      footerForm          footerText       footerText" 
-      "footerForm      footerForm        footerText       footerText" 
-      "footerForm      footerForm        footerAddress    footerTwitter" 
-      "footerForm      footerForm        footerAddress    footerInstagram" 
-      "footerForm      footerForm        footerPhone      footerWebsite" 
-      "footerForm  footerForm    footerEmail      footerFacebook";
+      "formSection      formSection          footerText       footerText" 
+      "formSection      formSection        footerText       footerText" 
+      "formSection      formSection        footerAddress    footerTwitter" 
+      "formSection      formSection        footerAddress    footerInstagram" 
+      "formSection      formSection        footerPhone      footerWebsite" 
+      "formSection  formSection    footerEmail      footerFacebook";
 }
 
 .footerTitle {
-      display: flex;
+     
       grid-area: footerTitle;
       background-color: lightslategrey;
       align-items: center;
@@ -302,7 +302,7 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .formSection {
-   grid-area: footerForm;
+  grid-area: formSection;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
