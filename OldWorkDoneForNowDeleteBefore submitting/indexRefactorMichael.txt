@@ -158,8 +158,8 @@
                               <div class="articlesLinkContainer">
                                     <div class="articleBox">
                                           <div id="articleTitle">Champy is a pyro.</div>
-                                          <img class="articlePicture" id="articlePic1" src="images/2019Champy2.jpg"
-                                                width=30% height=30%>
+                                          <img class="articlePicture" id="articlePic1" src="images/2019Champy2.jpg" width=30%
+                                                height=30%>
 
                                           <p>In this way, the student can be guided from the simple concept of a
                                                 single-degree-of-freedom
@@ -192,12 +192,13 @@
 
             <div class="footerContainer">
                   <div class="footer">
-
+                        
                         <div class="footerTitle">QUESTIONS OR COMMENTS?<SPAN id="footerTitleBold">GET IN TOUCH:</SPAN>
                         </div>
-
+                        
                         <div class="formSection">
 
+                              <form action="action_page.php">
                                     <div> <label class="name" for="fname">First Name</label>
                                           <input type="text" id="fname" name="firstname" placeholder="Your name.."
                                                 required>
@@ -206,12 +207,12 @@
                                           <input type="text" id="email" name="lastname" placeholder="Your email"
                                                 required>
                                     </div>
-                                    <label class="name" for="subject">Subject</label>
+                                    <label class="subject" for="subject">Subject</label>
                                     <textarea id="subject" name="subject" placeholder="Write something.."
                                           style="height:200px"></textarea>
                                     <input type="submit" value="Submit">
 
-                              
+                              </form>
                         </div>
                         <div class="footerItem footerText">We're a most promising species, Mr. Spock, as predators
                               go.
@@ -236,17 +237,13 @@
                               My State 65432</div>
                         <div class="footerMediaLink footerPhone"> <img src="images/footerlink-phone.png">802.123.9876
                         </div>
-                        <div class="footerMediaLink footerEmail"> <img
-                                    src="images/footerlink-email.png">info@makersunion.com
+                        <div class="footerMediaLink footerEmail"> <img src="images/footerlink-email.png">info@makersunion.com
                         </div>
-                        <div class="footerMediaLink footerTwitter"> <img
-                                    src="images/footerlink-twitter.png">#MakerShmaker
+                        <div class="footerMediaLink footerTwitter"> <img src="images/footerlink-twitter.png">#MakerShmaker
                         </div>
-                        <div class="footerMediaLink footerInstagram"> <img
-                                    src="images/footerlink-instagram.png">makersunited
+                        <div class="footerMediaLink footerInstagram"> <img src="images/footerlink-instagram.png">makersunited
                         </div>
-                        <div class="footerMediaLink footerWebsite"> <img
-                                    src="images/footerlink-home.png">makershmaker.com
+                        <div class="footerMediaLink footerWebsite"> <img src="images/footerlink-home.png">makershmaker.com
                         </div>
                         <div class="footerMediaLink footerFacebook"> <img src="images/footerlink-facebook.png">Makers
                               United
