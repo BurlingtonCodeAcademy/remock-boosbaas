@@ -2,13 +2,6 @@
       display: grid;
       grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
       grid-gap: 1rem;
-      border-color: #002633;
-      border:.5em;
-}
-/**universal attributes***/
-button:hover{
-      color: hotpink;
-      
 }
 
 /********Header**********/
@@ -24,8 +17,8 @@ button:hover{
       display: flex;
       flex-direction: column;
       border-style: none none double none;
-      border-color: #002633;
-     
+      border-color: blue;
+      border-width: .5em;
 }
 
 #header-title {
@@ -51,7 +44,14 @@ button:hover{
 
 .teaserBox {
       border-style: none none double none;
-     
+      border-color: blue;
+      border-width: .5em;
+}
+
+.pictureGallery {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
 }
 
 #pictures-title {
@@ -63,24 +63,20 @@ button:hover{
 
 .mainPageGallery {
       display: flex;
-      align-content: baseline;
-    
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
 }
 
-figure {
-      width: 30%;
-      text-align: center;
-      font-style: italic;
-      font-size: smaller;
-      text-indent: 0;
-      margin: 0.5em;
-      padding: 0.5em;
+.picturesLabels {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1em;
 }
 
 .picture {
       display: flex;
-      justify-content: space-between;
-      margin: 5px;
 }
 
 .linkButton {
@@ -91,7 +87,16 @@ figure {
       margin-top: 2.5em;
 }
 
-
+/*#pic-link-button {
+      display: flex;
+      border-style: inset;
+      border-color: blue;
+      border-width: .1em;
+      margin-top: 2.5em;
+      justify-content: center;
+      width: 20%;
+      height: 20%;
+}*/
 
 /***********Picture galleryquote section *******/
 
@@ -117,9 +122,9 @@ figure {
       padding-left: 1em;
       padding-right: 1em;
       font-size: 2em;
-      border-right: 5px double #002633;
+      border-right: 5px double blue;
       border-radius: 15px 15px 15px 15px;
-      border-left: 5px double #002633;
+      border-left: 5px double blue;
 }
 
 /*Both columns container and grid*/
@@ -154,6 +159,7 @@ figure {
 }
 
 p {
+      display: flex;
       justify-content: space-around;
       font-family: 'Libre Baskerville', 16px;
       text-align: left;
@@ -172,6 +178,9 @@ h2 {
       grid-column-start: 3;
       grid-column-end: 4;
       order: 6;
+      border-style: none none none double;
+      border-color: red;
+      border-width: 4px;
       width: auto;
 }
 
@@ -180,19 +189,22 @@ h2 {
 .postLinks {
       display: flex;
       flex-direction: column;
-      border: none none double none ;
+      border-style: none none double none;
+      border-color: red;
+      border-width: 4px;
       margin-left: 2em;
 }
 
 .postLink {
       flex-direction: column;
       display: flex;
+      border-bottom: solid 4px firebrick;
       align-content: space-around;
       margin-top: 1em
 }
 
 .date {
-      border: 3px solid #002633;
+      border: 3px solid #0A72B3;
       background-color: #1CA7FF;
       margin-top: 1em;
 }
@@ -211,14 +223,11 @@ h3 {
 }
 
 .articleBox {
-
+      flex-direction: column;
+      display: flex;
+      border-bottom: solid 4px greenyellow;
       align-content: space-around;
       margin-top: 1em
-}
-
-.articlePicture {
-      float: left;
-      margin-right: 1em;
 }
 
 /********** Footer  *************/
@@ -236,15 +245,25 @@ h3 {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: repeat(1fr);
       grid-gap: 1rem;
-      grid-template-areas: "footerTitle       footerTitle        footerTitle      footerTitle" "footerTitle       footerTitle        footerTitle      footerTitle" "footerTitle       footerTitle        footerTitle      footerTitle" "footerTitle       footerTitle        footerTitle      footerTitle" "formSection       formSection        footerText       footerText" "formSection       formSection        footerText       footerText" "formSection       formSection        footerAddress    footerTwitter" "formSection       formSection        footerAddress    footerInstagram" "formSection       formSection        footerPhone      footerWebsite" "formSection       formSection        footerEmail      footerFacebook";
+      grid-template-areas: 
+      "footerTitle       footerTitle        footerTitle      footerTitle"
+      "footerTitle       footerTitle        footerTitle      footerTitle"
+      "footerTitle       footerTitle        footerTitle      footerTitle" 
+      "footerTitle       footerTitle        footerTitle      footerTitle" 
+      "formSection       formSection        footerText       footerText" 
+      "formSection       formSection        footerText       footerText" 
+      "formSection       formSection        footerAddress    footerTwitter" 
+      "formSection       formSection        footerAddress    footerInstagram" 
+      "formSection       formSection        footerPhone      footerWebsite" 
+      "formSection       formSection        footerEmail      footerFacebook";
 }
 
 .footerTitle {
       grid-area: footerTitle;
       display: flex;
+      background-color: #f2f2f2;
       justify-content: center;
       align-content: center;
-      padding-top: 2em;
 }
 
 #footerTitleBold {
@@ -253,45 +272,53 @@ h3 {
 
 .footerText {
       grid-area: footerText;
+      background-color: #f2f2f2;
 }
 
 .footerAddress {
       grid-area: footerAddress;
+      background-color: #f2f2f2;
       justify-content: center;
 }
 
 .footerPhone {
       grid-area: footerPhone;
+      background-color: rgb#f2f2f2;
 }
 
 .footerEmail {
       grid-area: footerEmail;
+      background-color: #f2f2f2;
 }
 
 .footerTwitter {
       grid-area: footerTwitter;
+      background-color: #f2f2f2;
 }
 
 .footerInstagram {
       grid-area: footerInstagram;
+      background-color: #f2f2f2;
 }
 
 .footerWebsite {
       grid-area: footerWebsite;
+      background-color: #f2f2f2;
 }
 
 .footerFacebook {
       grid-area: footerFacebook;
+      background-color: #f2f2f2;
 }
 
 /****form styling*****/
 
 input[type=text], select, textarea {
-      width: 96%;
+      width: 100%;
       /* Full width */
       padding: 12px;
       /* Some padding */
-      border: 1px solid;
+      border: 1px solid #ccc;
       /* Gray border */
       border-radius: 4px;
       /* Rounded borders */
@@ -304,33 +331,21 @@ input[type=text], select, textarea {
       resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-#fname {
-      width: 48%;
-}
-
-#email {
-      width: 48%;
-}
-
 /* Style the submit button with a specific background color etc */
 
-/* input[type=submit] {
+input[type=submit] {
       background-color: #4CAF50;
       color: white;
       padding: 12px 20px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-} */
+}
 
 /* When moving the mouse over the submit button, add a darker green color */
 
-input {
-      border: none;
-}
-
-input:hover {
-      border: #002633;
+input[type=submit]:hover {
+      background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
@@ -338,5 +353,6 @@ input:hover {
 .formSection {
       grid-area: formSection;
       border-radius: 5px;
+      background-color: #f2f2f2;
       padding: 20px;
 }
