@@ -68,12 +68,7 @@
       align-content: center;
 }
 
-.picturesLabels {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      font-size: 1em;
-}
+
 
 .picture {
       display: flex;
