@@ -1,7 +1,23 @@
+.pageContainer {
+      display: grid;
+      grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+      grid-gap: 1rem;
+      border-color: #002633;
+      border: .5em;
+}
+
+/**universal attributes***/
+
+button:hover {
+      color: hotpink;
+}
+
 .blogPostPageContainer {
       display: grid;
       grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
       grid-gap: 1rem;
+      border-color: #002633;
+      border: .5em;
 }
 
 /********Header**********/
@@ -17,8 +33,6 @@
       display: flex;
       flex-direction: column;
       border-style: none none double none;
-      border-color: blue;
-      border-width: .5em;
 }
 
 #header-title {
@@ -37,17 +51,28 @@
 
 .column1Container {
       display: grid;
-      grid-column-start: 3;
-      grid-column-end: 5;
-      order: 4;
+      flex-direction: column;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      order: 5;
+      width: auto;
 }
 
-#aeroPostTeaser {
+.teaserBox {
       display: flex;
+      flex-direction: column;
 }
 
-#dragonPostTeaser {
+p {
+      justify-content: space-around;
+      font-family: 'Libre Baskerville', 16px;
+      text-align: left;
+}
+
+h2 {
       display: flex;
+      font: "Raleway", 32px;
+      text-align: center;
 }
 
 p {
@@ -123,16 +148,7 @@ h3 {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-gap: 1rem;
-      grid-template-areas: 
-      "footerTitle       footerTitle         footerTitle      footerTitle"
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "nameInput         emailInput          footerText       footerText" 
-      "messageInput      messageInput        footerText       footerText" 
-      "messageInput      messageInput        footerAddress    footerTwitter" 
-      "messageInput      messageInput        footerAddress    footerInstagram" 
-      "messageInput      messageInput        footerPhone      footerWebsite" 
-      "footerSendButton  footerSendButton    footerEmail      footerFacebook";
+      grid-template-areas: "footerTitle       footerTitle         footerTitle      footerTitle" "footerTitle       footerTitle         footerTitle      footerTitle" "footerTitle       footerTitle         footerTitle      footerTitle" "nameInput         emailInput          footerText       footerText" "messageInput      messageInput        footerText       footerText" "messageInput      messageInput        footerAddress    footerTwitter" "messageInput      messageInput        footerAddress    footerInstagram" "messageInput      messageInput        footerPhone      footerWebsite" "footerSendButton  footerSendButton    footerEmail      footerFacebook";
 }
 
 .footerTitle {

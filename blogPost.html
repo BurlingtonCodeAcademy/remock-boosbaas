@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="continueReadingRefactor.css" />
+      <link rel="stylesheet" href="main.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-      <!--   Continue Reading Page Container    -->
-      <div class="continueReadingPageContainer">
+      
+      <!--   blog post Page Container    -->
+      <div class="pageContainer">
 
 
             <!--  header section ********************************-->
             <div class="headerContainer">
                   <div id="header">
-                        <div id="header-title">Continue Reading</div>
-                        <div id="header-description">Even more information for you!</div>
+                        <div id="header-title">Blog Post Page</div>
+                        <div id="header-description">Whoa now... One post at a time</div>
                         <p></p>
                   </div>
             </div>
@@ -28,7 +28,7 @@
 
                   <div id="aeroPostTeaser">
                         <h2>Structural Dynamics in Aeronautical Engineering</h2>
-                        <img class="logo" id=#topImage src="remockBox.svg">
+                        <img class="logo" id=#topImage src="images/remockBox.svg">
                         <p>is a comprehensive introduction to the modern methods of dynamic analysis of aeronautical
                               structures. The
                               text is particularly suitable for undergraduate students. For advanced students, the text
@@ -46,7 +46,7 @@
 
                   <div id="dragonPostTeaser">
                         <h2>Structural Dynamics in Lake Monster Engineering</h2>
-                        <img class="logo" id=#topImage src="remockBox.svg">
+                        <img class="logo" id=#topImage src="images/remockBox.svg">
                         <p>is a comprehensive introduction to the modern methods of dynamic analysis of aeronautical
                               structures. The
                               text is particularly suitable for undergraduate students. For advanced students, the text
@@ -108,44 +108,68 @@
 
 
             <div class="footerContainer">
-
                   <div class="footer">
-
-                        <div class="footerItem footerTitle">QUESTIONS OR COMMENTS? <SPAN ID="footerTitleBold"> GET IN
-                                    TOUCH:</SPAN></div>
-                        <input class="footerItem nameInput" />
-                        <input class="footerItem emailInput" />
-                        <input class="footerItem messageInput" />
-                        <button class="footerItem footerSendButton">Send</button>
-                        <div class="footerItem footerText">We're a most promising species, Mr. Spock, as predators go.
+            
+            
+                        <div class="footerTitle">QUESTIONS OR COMMENTS? <SPAN id="footerTitleBold">GET IN TOUCH:</SPAN>
+            
+                        </div>
+            
+                        <div class="formSection">
+            
+                              <form action="action_page.php">
+                                    <div>
+                                          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            
+                                          <input type="text" id="email" name="lastname" placeholder="Your email" required>
+                                    </div>
+                                    <label class="subject" for="subject"></label>
+                                    <textarea id="subject" name="subject" placeholder="Write something.."
+                                          style="height:200px"></textarea>
+                                    <input type="submit" value="Submit">
+            
+            
+                        </div>
+                        <div class="footerItem footerText">We're a most promising species, Mr. Spock, as predators
+                              go.
                               Did you know that?
                               I
-                              frequently have my doubts. I don't. Not any more. And maybe in a thousand years or so,
+                              frequently have my doubts. I don't. Not any more. And maybe in a thousand years or
+                              so,
                               we'll be able
-                              to prove it. To all mankind -- may we never find space so vast, planets so cold, heart and
+                              to prove it. To all mankind -- may we never find space so vast, planets so cold,
+                              heart and
                               mind so
-                              empty that we cannot fill them with love and warmth. It's time you learned that freedom is
+                              empty that we cannot fill them with love and warmth. It's time you learned that
+                              freedom is
                               never a
-                              gift. It has to be earned.</div>
-
-
-                        <div class="footerMediaLink footerAddress"> <img src="footerlink-home.png">1235 Main St. Any Old
-                              Town
-                              My State 65432</div>
-                        <div class="footerMediaLink footerPhone"> <img src="footerlink-phone.png">802.123.9876</div>
-                        <div class="footerMediaLink footerEmail"> <img src="footerlink-email.png">info@makersunion.com
+                              gift. It has to be earned.
                         </div>
-                        <div class="footerMediaLink footerTwitter"> <img src="footerlink-twitter.png">#MakerShmaker
+            
+            
+                        <div class="footerMediaLink footerAddress">
+                              <a><i class="fas fa-home"></i> 1235 Main St.<br />Any Old Town<br />My State<br />65432</a>
                         </div>
-                        <div class="footerMediaLink footerInstagram"> <img src="footerlink-instagram.png">makersunited
+                        <div class="footerMediaLink footerPhone"> <a><i class="fas fa-phone"></i> 802.123.9876</a>
                         </div>
-                        <div class="footerMediaLink footerWebsite"> <img src="footerlink-home.png">makershmaker.com
+                        <div class="footerMediaLink footerEmail"> <a><i class="fas fa-envelope"></i></a>
+                              info@makersunion.cominfo@makersunion.com
                         </div>
-                        <div class="footerMediaLink footerFacebook"> <img src="footerlink-facebook.png">Makers United
+                        <div class="footerMediaLink footerTwitter"> <a><i class="fab fa-twitter"></i> #MakerShmaker</a>
                         </div>
-
+                        <div class="footerMediaLink footerInstagram"> <a><i class="fab fa-instagram"></i> makersunited</a>
+                        </div>
+                        <div class="footerMediaLink footerWebsite"> <a><i class="fas fa-globe"></i> makershmaker.com</a>
+                        </div>
+                        <div class="footerMediaLink footerFacebook"> <a><i class="fab fa-facebook"></i> Makers</a>
+                        </div>
+            
+            
+            
                   </div>
-
+            
+            
+            </div>
             </div>
 
 
@@ -156,6 +180,14 @@
 
       </div>
 
-</body>
 
+
+
+
+
+
+
+
+
+</body>
 </html>

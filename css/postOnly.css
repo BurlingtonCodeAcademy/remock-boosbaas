@@ -6,6 +6,15 @@
 
 /********Header**********/
 
+figure {
+      width: 30%;
+      text-align: center;
+     
+      text-indent: 0;
+      margin: 0.5em;
+      padding: 0.5em;
+}
+
 .headerContainer {
       display: grid;
       grid-column-start: 2;
@@ -16,9 +25,6 @@
 #header {
       display: flex;
       flex-direction: column;
-      border-style: none none double none;
-      border-color: blue;
-      border-width: .5em;
 }
 
 #header-title {
@@ -42,7 +48,6 @@
       order: 1;
 }
 
-
 #dragonPostOnly {
       display: flex;
 }
@@ -59,107 +64,122 @@ h2 {
       text-align: center;
 }
 
-
-
 /********** Footer  *************/
 
 .footerContainer {
       display: grid;
       grid-column-start: 1;
       grid-column-end: 6;
-      order: 6;
+      order: 7;
+      background-color: #f2f2f2;
 }
 
 .footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(1fr);
       grid-gap: 1rem;
-      grid-template-areas: 
-      "footerTitle       footerTitle         footerTitle      footerTitle"
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "footerTitle       footerTitle         footerTitle      footerTitle" 
-      "nameInput         emailInput          footerText       footerText" 
-      "messageInput      messageInput        footerText       footerText" 
-      "messageInput      messageInput        footerAddress    footerTwitter" 
-      "messageInput      messageInput        footerAddress    footerInstagram" 
-      "messageInput      messageInput        footerPhone      footerWebsite" 
-      "footerSendButton  footerSendButton    footerEmail      footerFacebook";
+      grid-template-areas: "footerTitle       footerTitle        footerTitle      footerTitle" "footerTitle       footerTitle        footerTitle      footerTitle" "footerTitle       footerTitle        footerTitle      footerTitle" "footerTitle       footerTitle        footerTitle      footerTitle" "formSection       formSection        footerText       footerText" "formSection       formSection        footerText       footerText" "formSection       formSection        footerAddress    footerTwitter" "formSection       formSection        footerAddress    footerInstagram" "formSection       formSection        footerPhone      footerWebsite" "formSection       formSection        footerEmail      footerFacebook";
 }
 
 .footerTitle {
-      display: flex;
       grid-area: footerTitle;
-      background-color: lightslategrey;
-      align-items: center;
+      display: flex;
       justify-content: center;
+      align-content: center;
+      padding-top: 2em;
 }
 
 #footerTitleBold {
       font-weight: bold;
 }
 
-.nameInput {
-      grid-area: nameInput;
-      background-color: rgb(30, 45, 252);
-}
-
-.emailInput {
-      grid-area: emailInput;
-      background-color: rgb(252, 82, 30);
-}
-
-.messageInput {
-      grid-area: messageInput;
-      background-color: rgb(189, 30, 252);
-}
-
-.footerMediaLink {
-      justify-content: center;
-}
-
-.footerSendButton {
-      grid-area: footerSendButton;
-      background-color: rgb(248, 252, 30);
-}
-
 .footerText {
       grid-area: footerText;
-      background-color: rgb(252, 30, 30);
 }
 
 .footerAddress {
       grid-area: footerAddress;
-      background-color: rgb(45, 30, 252);
       justify-content: center;
 }
 
 .footerPhone {
       grid-area: footerPhone;
-      background-color: rgb(30, 252, 60);
 }
 
 .footerEmail {
       grid-area: footerEmail;
-      background-color: rgb(215, 30, 252);
 }
 
 .footerTwitter {
       grid-area: footerTwitter;
-      background-color: rgb(74, 252, 30);
 }
 
 .footerInstagram {
       grid-area: footerInstagram;
-      background-color: rgb(30, 252, 233);
 }
 
 .footerWebsite {
       grid-area: footerWebsite;
-      background-color: rgb(63, 30, 252);
 }
 
 .footerFacebook {
       grid-area: footerFacebook;
-      background-color: rgb(252, 30, 30);
+}
+
+/****form styling*****/
+
+input[type=text], select, textarea {
+      width: 96%;
+      /* Full width */
+      padding: 12px;
+      /* Some padding */
+      border: 1px solid;
+      /* Gray border */
+      border-radius: 4px;
+      /* Rounded borders */
+      box-sizing: border-box;
+      /* Make sure that padding and width stays in place */
+      margin-top: 6px;
+      /* Add a top margin */
+      margin-bottom: 16px;
+      /* Bottom margin */
+      resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#fname {
+      width: 48%;
+}
+
+#email {
+      width: 48%;
+}
+
+/* Style the submit button with a specific background color etc */
+
+/* input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+} */
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input {
+      border: none;
+}
+
+input:hover {
+      border: #002633;
+}
+
+/* Add a background color and some padding around the form */
+
+.formSection {
+      grid-area: formSection;
+      border-radius: 5px;
+      padding: 20px;
 }
