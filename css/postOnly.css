@@ -25,6 +25,8 @@
       display: flex;
       font-size: 4em;
       justify-content: center;
+      text-decoration: none;
+      transition: 2s;
 }
 
 #header-description {
