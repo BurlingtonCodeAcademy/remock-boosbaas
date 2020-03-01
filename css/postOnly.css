@@ -1,19 +1,10 @@
-.blogPostPageContainer {
+.pageContainer {
       display: grid;
       grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
       grid-gap: 1rem;
 }
 
 /********Header**********/
-
-figure {
-      width: 30%;
-      text-align: center;
-     
-      text-indent: 0;
-      margin: 0.5em;
-      padding: 0.5em;
-}
 
 .headerContainer {
       display: grid;
@@ -25,6 +16,9 @@ figure {
 #header {
       display: flex;
       flex-direction: column;
+      border-style: none none double none;
+      border-color: blue;
+      border-width: .5em;
 }
 
 #header-title {
@@ -47,17 +41,19 @@ figure {
       display: grid;
       grid-column-start: 2;
       grid-column-end: 5;
-      order: 1;
+      order: 2;
 }
+
 
 #dragonPostOnly {
       display: flex;
+      flex-direction: column;
 }
 
 p {
       display: flex;
       font-family: 'Libre Baskerville', 16px;
-      text-align: center;
+      text-align: left;
 }
 
 h2 {
@@ -65,6 +61,7 @@ h2 {
       font: "Raleway", 32px;
       text-align: center;
 }
+
 
 /********** Footer  *************/
 

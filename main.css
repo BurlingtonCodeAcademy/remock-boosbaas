@@ -56,6 +56,14 @@ button:hover {
 
 .teaserBox {
       border-style: none none double none;
+      border-color: blue;
+      border-width: .5em;
+}
+
+.pictureGallery {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
 }
 
 #pictures-title {
@@ -71,23 +79,20 @@ button:hover {
 
 .mainPageGallery {
       display: flex;
-      align-content: baseline;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
 }
 
-figure {
-      width: 30%;
-      text-align: center;
-      font-style: italic;
-      font-size: smaller;
-      text-indent: 0;
-      margin: 0.5em;
-      padding: 0.5em;
+.picturesLabels {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1em;
 }
 
 .picture {
       display: flex;
-      justify-content: space-between;
-      margin: 5px;
 }
 
 .linkButton {
