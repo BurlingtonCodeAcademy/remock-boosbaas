@@ -164,7 +164,6 @@ button:hover{
 }
 
 p {
-      display: flex;
       justify-content: space-around;
       font-family: 'Libre Baskerville', 16px;
       text-align: left;
@@ -228,11 +227,14 @@ h3 {
 }
 
 .articleBox {
-      flex-direction: column;
-      display: flex;
-      border-bottom: solid 4px greenyellow;
+        border-bottom: solid 4px greenyellow;
       align-content: space-around;
       margin-top: 1em
+}
+
+.articlePicture {
+      float: left;
+      margin-right: 1em;
 }
 
 /********** Footer  *************/
@@ -269,6 +271,7 @@ h3 {
       background-color: #f2f2f2;
       justify-content: center;
       align-content: center;
+      padding-top: 2em;
 }
 
 #footerTitleBold {
@@ -319,7 +322,7 @@ h3 {
 /****form styling*****/
 
 input[type=text], select, textarea {
-      width: 100%;
+      width: 96%;
       /* Full width */
       padding: 12px;
       /* Some padding */
@@ -334,6 +337,14 @@ input[type=text], select, textarea {
       margin-bottom: 16px;
       /* Bottom margin */
       resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#fname {
+      width: 48%;
+}
+
+#email {
+      width: 48%;
 }
 
 /* Style the submit button with a specific background color etc */
