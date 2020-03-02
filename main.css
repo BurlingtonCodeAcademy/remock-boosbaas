@@ -23,8 +23,7 @@ h2 {
 
 h3 {
       display: flex;
- }
-
+}
 
 .linkButton {
       display: flex;
@@ -41,8 +40,6 @@ a:hover {
 a {
       text-decoration: none;
 }
-
-
 
 /********Header**********/
 
@@ -86,7 +83,6 @@ a {
 
 .teaserBox {
       border-style: none none double none;
-     
       border-width: .5em;
 }
 
@@ -102,7 +98,6 @@ a {
       justify-content: center;
       align-content: center;
 }
-
 
 .mainPageGallery {
       display: flex;
@@ -121,8 +116,6 @@ a {
 .picture {
       display: flex;
 }
-
-
 
 /*********** quote section *******/
 
@@ -177,7 +170,6 @@ a {
       order: 2;
 }
 
-
 #dragonPostOnly {
       display: flex;
       flex-direction: column;
@@ -207,8 +199,6 @@ a {
       display: flex;
       flex-direction: column;
 }
-
-
 
 /***********column 2 section *******/
 
@@ -261,8 +251,6 @@ a {
 .linkTitle:hover {
       color: red;
 }
-
-
 
 /***Column 2 -  links to articles  ***/
 
