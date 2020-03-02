@@ -168,6 +168,21 @@ a {
       grid-gap: 1em;
 }
 
+/**********post only columns   */
+
+.postContainer {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      order: 2;
+}
+
+
+#dragonPostOnly {
+      display: flex;
+      flex-direction: column;
+}
+
 /***********column 1 section *******/
 
 .column1Container {
