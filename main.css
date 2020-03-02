@@ -56,7 +56,7 @@ button:hover {
 
 .teaserBox {
       border-style: none none double none;
-      border-color: blue;
+     
       border-width: .5em;
 }
 
@@ -335,12 +335,13 @@ input[type=text], select, textarea {
 
 /* When moving the mouse over the submit button, add a darker green color */
 
-input {
-      border: none;
+.submitButton {
+      border: #002633;
 }
 
-input:hover {
-      border: #002633;
+.submitButton:hover {
+      border: none;
+      background-color: #008080;
 }
 
 /* Add a background color and some padding around the form */
